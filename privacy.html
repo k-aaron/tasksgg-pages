@@ -1,0 +1,122 @@
+<title>TasksGG 개인정보처리방침</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --surface: #f5f6f8;
+    --text: #14161a;
+    --text-muted: #5b616e;
+    --border: #e4e6ea;
+    --accent-1: #6aa6ff;
+    --accent-2: #4285f4;
+    --accent-3: #1d4ed8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #101114;
+      --surface: #17181c;
+      --text: #f2f3f5;
+      --text-muted: #9aa0ab;
+      --border: #2a2c31;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #101114;
+    --surface: #17181c;
+    --text: #f2f3f5;
+    --text-muted: #9aa0ab;
+    --border: #2a2c31;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    padding-inline: 24px;
+  }
+  .wrap {
+    max-width: 680px;
+    margin: 0 auto;
+    padding-block: 64px 96px;
+  }
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--accent-2);
+    letter-spacing: 0.02em;
+  }
+  .eyebrow .dot {
+    width: 8px; height: 8px; border-radius: 50%;
+    background: linear-gradient(135deg, var(--accent-1), var(--accent-3));
+  }
+  h1 {
+    font-size: clamp(26px, 4vw, 34px);
+    letter-spacing: -0.01em;
+    margin: 14px 0 8px;
+  }
+  .updated { font-size: 13px; color: var(--text-muted); margin: 0 0 40px; }
+  section { border-top: 1px solid var(--border); padding-block: 26px; }
+  section h2 { font-size: 17px; margin: 0 0 10px; }
+  section p, section li { font-size: 15px; line-height: 1.75; color: var(--text); margin: 0; }
+  ul { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 8px; }
+  code {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 1px 6px;
+    font-size: 13px;
+  }
+  a { color: var(--accent-2); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .footer { border-top: 1px solid var(--border); padding-top: 24px; font-size: 13px; color: var(--text-muted); }
+</style>
+
+<div class="wrap">
+  <span class="eyebrow"><span class="dot"></span>TasksGG</span>
+  <h1>개인정보처리방침</h1>
+  <p class="updated">최종 업데이트: 2026년 9월 29일</p>
+
+  <section>
+    <h2>이 앱이 하는 일</h2>
+    <p>TasksGG는 사용자 본인의 Google 계정으로 로그인해 Google Tasks 목록을 macOS 데스크톱에서 보고 편집할 수 있게 해주는 개인용 클라이언트 앱입니다. Google이 아닌 별도의 서버를 운영하지 않으며, 모든 요청은 사용자의 기기에서 Google API로 직접 전송됩니다.</p>
+  </section>
+
+  <section>
+    <h2>수집하는 정보와 접근 권한</h2>
+    <p>로그인 시 Google에 아래 권한(스코프)을 요청합니다.</p>
+    <ul>
+      <li><code>openid</code>, <code>email</code>, <code>profile</code> — 앱 안에 표시할 이름과 프로필 사진을 가져오기 위해 사용합니다.</li>
+      <li><code>https://www.googleapis.com/auth/tasks</code> — Google Tasks의 할 일 목록을 읽고 쓰기 위해 사용합니다.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>데이터 저장 및 전송</h2>
+    <ul>
+      <li>Google이 발급한 인증 토큰은 사용자의 로컬 기기에만 저장되며, 개발자를 포함한 어떤 제3자에게도 전송되지 않습니다.</li>
+      <li>할 일 데이터는 Google 서버에만 저장됩니다 — 이 앱은 그 데이터를 별도로 수집, 복제, 백업하지 않습니다.</li>
+      <li>분석 도구, 광고 SDK, 트래커를 포함하지 않습니다.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>제3자 공유</h2>
+    <p>수집·처리하는 개인정보를 제3자와 공유하거나 판매하지 않습니다. 이 앱과 Google 서버 외에는 어떤 곳으로도 데이터가 전송되지 않습니다.</p>
+  </section>
+
+  <section>
+    <h2>데이터 삭제</h2>
+    <p>앱 안의 "로그아웃"을 누르면 로컬에 저장된 인증 토큰이 즉시 삭제됩니다. Google 계정에 부여한 권한 자체를 회수하려면 <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">Google 계정 권한 관리 페이지</a>에서 TasksGG의 접근 권한을 해제하시면 됩니다.</p>
+  </section>
+
+  <section>
+    <h2>문의</h2>
+    <p>이 방침이나 앱 관련 문의는 <a href="mailto:mink0324@gmail.com">mink0324@gmail.com</a>으로 연락해주세요.</p>
+  </section>
+
+  <div class="footer">TasksGG · 개인 프로젝트로 제작·운영됩니다.</div>
+</div>
